@@ -16,3 +16,6 @@ console.log(setAlarm(true, true)) // will return false. both employed and vacati
 console.log(setAlarm(false, false)) // will return false. not employed so no alarm is needed
 console.log(setAlarm(false, true)) // will return false. not employed so no alarm is needed AND vactioning
 console.log(setAlarm(true, false)) // will return true. employed and not vacationing
+
+
+// --Count Odd Numbers

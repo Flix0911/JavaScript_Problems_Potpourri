@@ -74,15 +74,33 @@ trollBeGone() //invoke the function
 //creditCard
 
 const bankInfo = { //object called bankInfo
-    savings: 0, //key called savings
-    checking: 0, //key called checking
-    moneyMarket: 0, //key called moneyMarket
-    creditCard: 0, //key called creditCard
+    savings: 600, //key called savings
+    checking: 800, //key called checking
+    moneyMarket: 200, //key called moneyMarket
+    creditCard: -2000, //key called creditCard
 }
 
-console.log( //console.log to check I can pull it. set to 0 to view
+console.log( //console.log to check I can pull it. set to 0 to view. This is the whole object
     bankInfo.savings,
     bankInfo.checking,
     bankInfo.moneyMarket,
     bankInfo.creditCard
 )
+
+console.log(bankInfo.savings) //result should be 600
+console.log(bankInfo.checking) //should be 800
+console.log(bankInfo.moneyMarket) //should be 200
+console.log(bankInfo.creditCard) //should be -2000
+
+function bankAccountSummary() { //write a function called bankAccountSummary
+    const myBalance = Object.keys(bankInfo);
+    let sum = 0;
+    for (const key of myBalance) { // I have to look up line 96-101. I don't fully understand this but do remember this vaguely
+                                    //can't find the notes on it but I get that I'm using Object.keys
+        sum += bankInfo[key];
+    }
+    return sum;
+}
+
+const bankTotal = bankAccountSummary() //store the value in a variable called bankTotal
+console.log(bankTotal) // console log the bankTotal variable

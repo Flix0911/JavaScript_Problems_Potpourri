@@ -52,7 +52,13 @@ console.log(oddNumberCount(16))
 //The function should return a new string with all the vowels removed from the original string.
 
 //write a function name TrollBeGone
-function trollBeGone("This website is for losers LOL") { //in the argument, should be the string "This website is for losers LOL"
-//iterate over all vowels in the string
-//replace(/[aeiou]/)
-//console.log the new string
+const meanTroll = `This website is for losers LOL` //named meanTroll
+
+function trollBeGone() { //function called trollBeGone
+    const noVowels = meanTroll.replace(/[aeiou]/gi, ''); //name a variable called noVowels which is = to meanTroll but aeiou is replaced
+console.log(noVowels) //console log the result
+    
+}
+
+trollBeGone() //invoke the function
+

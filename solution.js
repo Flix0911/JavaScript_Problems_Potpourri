@@ -19,3 +19,25 @@ console.log(setAlarm(true, false)) // will return true. employed and not vacatio
 
 
 // --Count Odd Numbers
+
+//Write a function named oddNumberCount which receives one argument that should be a number. 
+//The function should return how many positive odd numbers there are below the number passed into the argument.
+
+//Write a function named oddNumber Count
+
+function oddNumberCount(num) { //one argument in the function that is a number
+    if (num < 0) { //if statement declaring what num is greater than
+        return []; //return in an array
+    }
+    
+    const oddNumbers = []; //declare a variable named oddNumbers
+    for (let i = 1; i < num; i += 2) { //set at 1 because we want odd numbers. 1 += 2 to add 2 each time
+        oddNumbers.push(i); //push i each time and add to the array
+    }
+    return oddNumbers;
+
+
+}
+
+console.log(oddNumberCount(7))
+console.log(oddNumberCount(16))

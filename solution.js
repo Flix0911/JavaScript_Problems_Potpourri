@@ -41,3 +41,18 @@ function oddNumberCount(num) { //one argument in the function that is a number
 
 console.log(oddNumberCount(7))
 console.log(oddNumberCount(16))
+
+// --Disemvoweling Trolls
+
+//Trolls are attacking your comment section! 
+//Let's neutralize the threat by removing all vowels from their comments. 
+//That'll make them look real silly.
+
+//Write a function named trollsBeGone which receives one argument that should be a sentence (a string). 
+//The function should return a new string with all the vowels removed from the original string.
+
+//write a function name TrollBeGone
+function trollBeGone("This website is for losers LOL") { //in the argument, should be the string "This website is for losers LOL"
+//iterate over all vowels in the string
+//replace(/[aeiou]/)
+//console.log the new string

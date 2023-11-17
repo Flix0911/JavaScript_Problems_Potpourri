@@ -104,3 +104,17 @@ function bankAccountSummary() { //write a function called bankAccountSummary
 
 const bankTotal = bankAccountSummary() //store the value in a variable called bankTotal
 console.log(bankTotal) // console log the bankTotal variable
+
+
+//Write another function called inTheRed that accepts your bank account summary total (number) as an argument. 
+//The function should return true if your total is less than 0, and false otherwise.
+
+function inTheRed() { //create a function called inTheRed
+    if(bankTotal < 0) {
+        return true;
+    }else; {
+        return false;
+    }
+
+}
+console.log(inTheRed(bankTotal)) //console log the result. Returns true. below 0

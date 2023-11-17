@@ -62,3 +62,27 @@ console.log(noVowels) //console log the result
 
 trollBeGone() //invoke the function
 
+// --Bank Account Summary
+
+//Make an object named bankInfo with your banking info that includes the keys listed below. 
+//Each key should have a number value that can either be negative or positive (e.g. -500 or 500)
+
+//keys required
+//savings
+//checking
+//moneyMarket
+//creditCard
+
+const bankInfo = { //object called bankInfo
+    savings: 0, //key called savings
+    checking: 0, //key called checking
+    moneyMarket: 0, //key called moneyMarket
+    creditCard: 0, //key called creditCard
+}
+
+console.log( //console.log to check I can pull it. set to 0 to view
+    bankInfo.savings,
+    bankInfo.checking,
+    bankInfo.moneyMarket,
+    bankInfo.creditCard
+)

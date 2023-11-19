@@ -11,11 +11,11 @@ console.log("hello world")
 //This is where we will save the user's input later.
 
 const words = {
-    number: '',
-    adjective: '',
-    pluralNoun: '',
-    adverb: '',
-    anotherAdjective: '',
+    number: "",
+    adjective: "",
+    pluralNoun: "",
+    adverb: "",
+    anotherAdjective: "",
 }
 
 // ----------
@@ -27,19 +27,28 @@ const words = {
 //so that we can save it to the object.
 function startMadLib() {
    let number = prompt("Enter a number!"); {
-    //number = wordsNumber(number)
-   console.log(number); //~ confirming number works
-   } let adjective = prompt("Enter an adjective"); {
+    //number = words.number(number)
+   console.log(number); //confirming number works
+   } 
+   
+   let adjective = prompt("Enter an adjective"); {
     //adjective = wordsAdjective(adjective)
-    console.log(adjective) //~confirming adjective works
-   } let pluralNoun = prompt("Enter a plural noun"); {
-    console.log(pluralNoun) 
-   } let adverb = prompt("Enter an adverb"); {
-    console.log(adverb)
-   } let anotherAdjective = prompt("Enter another adjective"); {
-    console.log(anotherAdjective)
+    console.log(adjective) //confirming adjective works
+   } 
+   
+   let pluralNoun = prompt("Enter a plural noun"); {
+    console.log(pluralNoun) //confirming pluralNoun works
+   } 
+   
+   let adverb = prompt("Enter an adverb"); {
+    console.log(adverb)//cofirming adverb works
+   } 
+   
+   let anotherAdjective = prompt("Enter another adjective"); {
+    console.log(anotherAdjective)//confirming anotherAdjective works
    }
-console.log(startMadLib)
+console.log((words.number, 'number'), (words.adjective, 'adjective'), (words.pluralNoun, 'pluralNoun'), (words.adverb, 'adverb'), (words.anotherAdjective, 'anotherAdjective'))
+//This is not logging correctly like the prompt on the homework. I don't think I'm logging my variable?
 }
 
 startMadLib()

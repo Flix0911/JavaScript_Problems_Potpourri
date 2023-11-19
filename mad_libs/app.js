@@ -28,12 +28,18 @@ const words = {
 function startMadLib() {
    let number = prompt("Enter a number!"); {
     //number = wordsNumber(number)
-   console.log(number); //~ confirming it works
-   } let adjective = prompt ("Enter an adjective"); {
+   console.log(number); //~ confirming number works
+   } let adjective = prompt("Enter an adjective"); {
     //adjective = wordsAdjective(adjective)
-    console.log(adjective)
+    console.log(adjective) //~confirming adjective works
+   } let pluralNoun = prompt("Enter a plural noun"); {
+    console.log(pluralNoun) 
+   } let adverb = prompt("Enter an adverb"); {
+    console.log(adverb)
+   } let anotherAdjective = prompt("Enter another adjective"); {
+    console.log(anotherAdjective)
    }
-
+console.log(startMadLib)
 }
 
 startMadLib()

@@ -32,7 +32,7 @@ const words = {
 
 function startMadlib() { //my function called startMadlib
     {
-        alert("This is a madelibs game. You will be prompted to submit certain responses. Lets begin!");
+        alert("This is a madlibs game. You will be prompted to submit certain responses. At the end, your responses will be plugged into the whole paragraph. Lets begin!");
 
     }let chosenNumber = prompt("Enter a number!"); {
     words.number = chosenNumber; //I believe this is correct but I don't understand why

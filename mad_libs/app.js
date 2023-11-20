@@ -26,7 +26,10 @@ const words = {
 //Now that we have our object set up, we want to work on accepting user input 
 //so that we can save it to the object.
 function startMadLib() {
-   let chosenNumber = prompt("Enter a number!"); {
+    {
+        alert("This is a madelibs game. You will be prompted to submit certain responses. Lets begin!");
+
+    }let chosenNumber = prompt("Enter a number!"); {
     words.number = chosenNumber; //I believe this is correct but I don't understand why
     //chosenNumber = words.number(number) //This is incorrect and I know that now. Why?
    console.log(chosenNumber); //confirming number works

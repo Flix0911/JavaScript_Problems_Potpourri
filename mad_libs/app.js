@@ -30,40 +30,37 @@ function startMadlib() { //my function called startMadlib
         alert("This is a madlibs game. You will be prompted to submit certain responses. At the end, your responses will be plugged into the whole paragraph. Lets begin!");
 
     }let chosenNumber = prompt("Enter a number!"); {
-         words.number = chosenNumber;
+    words.number = chosenNumber;
     //chosenNumber = words.number(number) //I now understand why, thank you Kyle!
-            console.log(words.number = chosenNumber); //confirming number works
+    console.log(words.number = chosenNumber); //confirming number works
+
    } let chosenAdjective = prompt("Enter an adjective"); {
     words.adjective = chosenAdjective;
     //chosenAdjective = words.adjective(adjective)
     console.log(chosenAdjective) //confirming adjective works
-   } 
-   
-    let chosenPluralNoun = prompt("Enter a plural noun"); {
-    words.pluralNoun = chosenPluralNoun;/
+
+   } let chosenPluralNoun = prompt("Enter a plural noun"); {
+    words.pluralNoun = chosenPluralNoun;
     console.log(chosenPluralNoun) //confirming pluralNoun works
-   } 
-   
-    let chosenAdverb = prompt("Enter an adverb"); {
+
+   } let chosenAdverb = prompt("Enter an adverb"); {
     words.adverb = chosenAdverb;
     console.log(chosenAdverb)//cofirming adverb works
-   } 
-   
-    let chosenAnotherAdjective = prompt("Enter another adjective"); {
+
+   } let chosenAnotherAdjective = prompt("Enter another adjective"); {
     words.anotherAdjective = chosenAnotherAdjective/
     console.log(chosenAnotherAdjective)//confirming anotherAdjective works
-   }
 
-   alert(
+   }alert(
     `Once upon a time a group of ${chosenNumber} General Assembly graduates got together and made a startup called ${chosenAdjective} Technologies. 
     Their goal was to create smart ${chosenPluralNoun}. 
     They approached the challenge ${chosenAdverb} which ultimately lead them to ${chosenAnotherAdjective} fame.`
     );
 
-//console.log(words.number.chosenNumber, words.adjective.chosenAdjective, words.pluralNoun.chosenPluralNoun, words.adverb.chosenAdverb, words.anotherAdjective.chosenAnotherAdjective)
+//console.log(words.number.chosenNumber, words.adjective.chosenAdjective, words.pluralNoun.chosenPluralNoun, words.adverb.chosenAdverb, words.anotherAdjective.chosenAnotherAdjective) //can ignore
 
 console.log(words)
-//console.log((words.number, 'number'), (words.adjective, 'adjective'), (words.pluralNoun, 'pluralNoun'), (words.adverb, 'adverb'), (words.anotherAdjective, 'anotherAdjective'))
+//console.log((words.number, 'number'), (words.adjective, 'adjective'), (words.pluralNoun, 'pluralNoun'), (words.adverb, 'adverb'), (words.anotherAdjective, 'anotherAdjective')) //can ignore
 //This is not logging correctly like the prompt on the homework. I don't think I'm logging my variable?
 }
 

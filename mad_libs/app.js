@@ -26,28 +26,35 @@ const words = {
 //Now that we have our object set up, we want to work on accepting user input 
 //so that we can save it to the object.
 function startMadLib() {
-   let number = prompt("Enter a number!"); {
-    //number = words.number(number)
-   console.log(number); //confirming number works
+   let chosenNumber = prompt("Enter a number!"); {
+    words.number = chosenNumber; //I believe this is correct but I don't understand why
+    //chosenNumber = words.number(number) //This is incorrect and I know that now. Why?
+   console.log(chosenNumber); //confirming number works
    } 
    
-   let adjective = prompt("Enter an adjective"); {
-    //adjective = wordsAdjective(adjective)
-    console.log(adjective) //confirming adjective works
+   let chosenAdjective = prompt("Enter an adjective"); {
+    words.adjective = chosenAdjective;//I believe this is correct but I don't understand why
+    //chosenAdjective = words.adjective(adjective)
+    console.log(chosenAdjective) //confirming adjective works
    } 
    
-   let pluralNoun = prompt("Enter a plural noun"); {
-    console.log(pluralNoun) //confirming pluralNoun works
+   let chosenPluralNoun = prompt("Enter a plural noun"); {
+    words.pluralNoun = chosenPluralNoun;//I believe this is correct but I don't understand why
+    console.log(chosenPluralNoun) //confirming pluralNoun works
    } 
    
-   let adverb = prompt("Enter an adverb"); {
-    console.log(adverb)//cofirming adverb works
+   let chosenAdverb = prompt("Enter an adverb"); {
+    words.adverb = chosenAdverb;//I believe this is correct but I don't understand why
+    console.log(chosenAdverb)//cofirming adverb works
    } 
    
-   let anotherAdjective = prompt("Enter another adjective"); {
-    console.log(anotherAdjective)//confirming anotherAdjective works
+   let chosenAnotherAdjective = prompt("Enter another adjective"); {
+    words.anotherAdjective = chosenAnotherAdjective//I believe this is correct but I don't understand why
+    console.log(chosenAnotherAdjective)//confirming anotherAdjective works
    }
-console.log((words.number, 'number'), (words.adjective, 'adjective'), (words.pluralNoun, 'pluralNoun'), (words.adverb, 'adverb'), (words.anotherAdjective, 'anotherAdjective'))
+alert(`Once upon a time a group of ${chosenNumber} General Assembly graduates got together and made a startup called ${chosenAdjective} Technologies. Their goal was to create smart ${chosenPluralNoun}. They approached the challenge ${chosenAdverb} which ultimately lead them to ${chosenAnotherAdjective} fame.`)
+
+//console.log((words.number, 'number'), (words.adjective, 'adjective'), (words.pluralNoun, 'pluralNoun'), (words.adverb, 'adverb'), (words.anotherAdjective, 'anotherAdjective'))
 //This is not logging correctly like the prompt on the homework. I don't think I'm logging my variable?
 }
 

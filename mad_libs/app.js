@@ -11,11 +11,6 @@ console.log("hello world")
 //This is where we will save the user's input later.
 
 const words = {
-    number: "",
-    adjective: "",
-    pluralNoun: "",
-    adverb: "",
-    anotherAdjective: "",
 }
 
 // ----------
@@ -68,10 +63,18 @@ function startMadlib() { //my function called startMadlib
     They approached the challenge ${chosenAdverb} which ultimately lead them to ${chosenAnotherAdjective} fame.`
     );
 
-console.log(words.number.chosenNumber, words.adjective.chosenAdjective, words.pluralNoun.chosenPluralNoun, words.adverb.chosenAdverb, words.anotherAdjective.chosenAnotherAdjective)
+//console.log(words.number.chosenNumber, words.adjective.chosenAdjective, words.pluralNoun.chosenPluralNoun, words.adverb.chosenAdverb, words.anotherAdjective.chosenAnotherAdjective)
+
+console.log(words)
 //console.log((words.number, 'number'), (words.adjective, 'adjective'), (words.pluralNoun, 'pluralNoun'), (words.adverb, 'adverb'), (words.anotherAdjective, 'anotherAdjective'))
 //This is not logging correctly like the prompt on the homework. I don't think I'm logging my variable?
 }
 
 startMadlib() //will invoke the function to begin upon opening the page
+
+//reset function
+
+//create a function named restartMadlib
+//reassign our words object with empty string values / aka: empty our words object
+
 

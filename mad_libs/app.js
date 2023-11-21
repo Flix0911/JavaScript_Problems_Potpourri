@@ -56,6 +56,7 @@ function startMadlib() { //my function called startMadlib
     Their goal was to create smart ${chosenPluralNoun}. 
     They approached the challenge ${chosenAdverb} which ultimately lead them to ${chosenAnotherAdjective} fame.`
     );
+    restartMadlib()
 
 //console.log(words.number.chosenNumber, words.adjective.chosenAdjective, words.pluralNoun.chosenPluralNoun, words.adverb.chosenAdverb, words.anotherAdjective.chosenAnotherAdjective) //can ignore
 
@@ -70,8 +71,16 @@ startMadlib() //will invoke the function to begin upon opening the page
 
 //create a function named restartMadlib
 
-function restartMadLib() {
-
+function restartMadlib() {
+    const response = prompt("Would you like to play again, [y]es or [n]o?"); {
+        }if (response === 'y'){
+            startMadlib()
+        }else if (response === 'n'){
+            alert("Cya later alligator!")
+        }else {
+            alert("Choose yes or no! Type 'y' or 'n'.")
+            restartMadlib()
+        }
 }
 //reassign our words object with empty string values / aka: empty our words object
 
